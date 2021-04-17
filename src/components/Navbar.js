@@ -21,7 +21,7 @@ export default class Navbar extends Component {
                     
 
                     <Link to='/' className="nav-link text-secondary ml-5 border rounded-circle  bg-light ">
-                        <img  style={{ height: 3 + 'em', width: 2 + 'em' }} src={home}/>
+                        <img  style={{ height: 3 + 'em', width: 2 + 'em' }} src={home} alt=""/>
                     </Link>
 
                     <div className="navbar-nav align-item-center">

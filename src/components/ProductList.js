@@ -107,7 +107,7 @@ export default class ProductList extends Component {
                                 <p className="text-secondary">Store details</p>
                                 <strong>Target</strong>
                                 <p className="text-secondary">cham Towers, plot 12 Nkeruwa Rd, kampala.Ug</p>
-                                <button className="bg-success text-white border-0"> <i class="fab fa-whatsapp"></i><a href="whatsapp.com"/> chat with us</button>
+                                <button className="bg-success text-white border-0"> <i className=" link fab fa-whatsapp"></i><a href="#"/> chat with us</button>
 
                             </div>
 
