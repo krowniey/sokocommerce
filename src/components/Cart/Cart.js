@@ -9,6 +9,7 @@ import CartTotals from './CartTotals';
 export default class Cart extends Component {
     render() {
         return (
+            
             <section>
                 <ProductConsumer>
                     {value => {
@@ -33,6 +34,7 @@ export default class Cart extends Component {
                 </ProductConsumer>
         
                 </section >
+            
         );
     }
 }

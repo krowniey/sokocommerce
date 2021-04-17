@@ -24,7 +24,7 @@ export default class Modal extends Component {
                                             <h5 className="text-muted">price : # {price}</h5>
                                             <Link to='/'>
                                                 <ButtonContainer onClick={() => closeModel()}>
-                                                    farm
+                                                    product
 
                                            </ButtonContainer>
 
@@ -32,7 +32,7 @@ export default class Modal extends Component {
                                             </Link>
                                             <Link to='/cart'>
                                                 <ButtonContainer cartColor onClick={() => closeModel()}>
-                                                    go to cart
+                                                    go to Bag
 
                                            </ButtonContainer>
 
