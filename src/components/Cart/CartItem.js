@@ -2,8 +2,9 @@ import React from 'react'
 
 export default function CartItem({ item, value }) {
 
-    const { id, title, price, total, count } = item;
-    const { incrementation, decrementation, removeItem } = value
+    const { id, title, price, count } = item;
+    const { incrementation, decrementation, removeItem } = value;
+    
 
     return (
         <div className="container">
@@ -11,32 +12,31 @@ export default function CartItem({ item, value }) {
                 <div className="col-8"></div>
 
                 <div className="col-4 ">
-                    <div className="row border-left my-2 text-capitalize text-center">
+                    <div className="row border-left my-2 text-capitalize ">
                         
-                        <div className="col-10 mx-auto col-lg-12">
-                            <span className="d-lg-none">product:</span>
+                        <div className="col-10 mx-auto mt-5 my-3 col-lg-12">
+                        <strong className="">
                             {title}
-                        </div>
+                            <br/>
+                            <small className="text-secondary"><strong>per priece</strong>
+                            </small>
+                        </strong>
                         <div className="col-10 mx-auto col-lg-12">
-                            <div className="d-flex jusify-content-center">
-                                <span className="d-lg-none">price:</span>
-                                {price}
+                            <div className=" mt-3">
 
-                                <div>
-                                    <span className="btn btn-black mx-1" onClick={() => decrementation(id)}>-</span>
-                                    <span className="btn btn-black mx-1">{count}</span>
-                                    <span className="btn btn-black mx-1" onClick={() => incrementation(id)}>+</span>
+                               <span className="mr-2 "> UGX </span>
+                                {price}
+                                <div className="counter d-flex   justify-content-end">
+                                    <span className="btn btn-black rounded-left" onClick={() => decrementation(id)}>-</span>
+                                    <span className="btn border-top btn-black bg-white border-bottom ">{count}</span>
+                                    <span className="btn btn-black rounded-right " onClick={() => incrementation(id)}>+</span>
                                 </div>
+                                
                             </div>
+                            
                         </div>
                         <div className="col-10 mx-auto col-lg-12 my-2 my-lg-0">
-                            <div className="d-flex jusify-content-center">
-                                <div>
-                                    <span className="btn btn-black mx-1" onClick={() => decrementation(id)}>-</span>
-                                    <span className="btn btn-black mx-1">{count}</span>
-                                    <span className="btn btn-black mx-1" onClick={() => incrementation(id)}>+</span>
-                                </div>
-                            </div>
+                            
                         </div>
                         <div className="col-10 mx-auto col-lg-12">
 
@@ -44,12 +44,14 @@ export default function CartItem({ item, value }) {
                                 <i className="fa fa-trash"></i>
                             </div>
                         </div>
-                        <div className="col-10 mx-auto col-lg-12">
-                            <strong>item total : UGX {total}</strong>
-                        </div>
+                        
                     </div>
+                    
                 </div>
+                <hr/>
             </div>
+        </div>
+        
         </div>
     );
 

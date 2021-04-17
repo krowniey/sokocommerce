@@ -16,7 +16,7 @@ body{
 }
 .text-title{
   font-family: 'oswald', Arial, Helvetica, sans-serif;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0rem;
   text-transform: uppercase;
 }
 .text-blue{
@@ -27,12 +27,12 @@ body{
 
 }
 .btn-black{
-  background:transparent;
   text-transform: capitalize;
   font-size: 0.8rem !important;
   color: var(--mainDark);
-  border-radius:0 !important ;
-  border: 0.1rem  solid var(--mainDark) !important;
+  border: 0.1rem  solid var(--mainBlue) !important;
+  background-color: #a1dbfd !important;
+  
 
 }
 .btn-black:hover{
@@ -104,3 +104,6 @@ width: 110px;
   color: var(--mainYellow) !important;
   padding-left: 5rem;
 }
+/* .counter{
+  margin-left: 150px;
+} */

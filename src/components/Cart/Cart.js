@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import CartColumns from './CartColumns';
+// import CartColumns from './CartColumns';
 import EmptyCart from './EmptyCart';
 import { ProductConsumer } from '../../context';
 import CartList from './CartList';
@@ -19,7 +19,7 @@ export default class Cart extends Component {
                             return (
                                 <React.Fragment>
                                 
-                                    <CartColumns />
+                                    {/* <CartColumns /> */}
                                     <CartList value={value}/>
                                     <CartTotals value={value}/>
                                 </React.Fragment>
