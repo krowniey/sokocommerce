@@ -58,7 +58,7 @@ export default function CartTotals({ value }) {
 
                             </div>
 <div className=" col-12 mt-2 border-top">
-                            <small className="text-success ">you're about to save more UGX from this order</strong></small>
+                            <small className="text-success "> <strong>you're about to save more UGX from this order</strong></small>
                             </div>
                         </div>
                     </div>
